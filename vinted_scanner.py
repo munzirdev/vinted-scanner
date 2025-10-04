@@ -279,7 +279,8 @@ def main():
                 item_image = item["photo"]["full_size_url"]
 
                 # Check if the item has already been analyzed to prevent duplicates
-                if item_id not in list_analyzed_items:
+                # TEMPORARY: Send all items for testing (remove this condition for production)
+                if True:  # item_id not in list_analyzed_items:
 
                     # Send e-mail notifications if configured
                     if Config.smtp_username and Config.smtp_server:
