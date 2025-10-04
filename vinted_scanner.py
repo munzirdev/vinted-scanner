@@ -271,6 +271,7 @@ def main():
             items_to_process = data["items"][:5]
             logging.info(f"Processing {len(items_to_process)} most recent items")
             
+            new_items_count = 0
             for item in items_to_process:
                 item_id = str(item["id"])
                 item_title = item["title"]
@@ -280,7 +281,9 @@ def main():
 
                 # Check if the item has already been analyzed to prevent duplicates
                 if item_id not in list_analyzed_items:
-
+                    new_items_count += 1
+                    logging.info(f"NEW ITEM FOUND: {item_title} - {item_price}")
+                    
                     # Send e-mail notifications if configured
                     if Config.smtp_username and Config.smtp_server:
                         send_email(item_title, item_price,item_url, item_image)
@@ -296,6 +299,10 @@ def main():
                     # Mark item as analyzed and save it
                     list_analyzed_items.append(item_id)
                     save_analyzed_item(item_id)
+                else:
+                    logging.info(f"Item already seen: {item_id} - {item_title}")
+            
+            logging.info(f"Total new items found: {new_items_count}")
 
 if __name__ == "__main__":
     # Send restart notification when script starts
