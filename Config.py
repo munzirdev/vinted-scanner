@@ -14,7 +14,7 @@ telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN", "8373369489:AAH5G4FqpuzDsCT
 # Single chat ID (for backward compatibility)
 telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID", "203591317")
 # Multiple chat IDs (list format)
-telegram_chat_ids = os.getenv("TELEGRAM_CHAT_IDS", "203591317").split(",")  # Comma-separated list
+telegram_chat_ids = os.getenv("TELEGRAM_CHAT_IDS", "203591317,179133083").split(",")  # Comma-separated list
 
 # Vinted URL: change the TLD according to your country (.fr, .es, etc.)
 vinted_url = "https://www.vinted.de"
