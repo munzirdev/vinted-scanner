@@ -32,3 +32,12 @@
 2025-10-04 22:18:26,584 - vinted_scanner.py -       main():264 - INFO - Item 3: Parfum Royal tobacco à 99% comme l’original tenue plus de 24h - 25.0 EUR
 2025-10-04 22:18:26,584 - vinted_scanner.py -       main():272 - INFO - Processing 5 most recent items
 2025-10-04 22:18:26,585 - vinted_scanner.py -   <module>():308 - INFO - Scan completed. Waiting 2 minutes before next scan...
+2025-10-04 22:20:28,101 - vinted_scanner.py -       main():245 - INFO - Search notification sent to chat 203591317
+2025-10-04 22:20:28,102 - vinted_scanner.py -       main():254 - INFO - Searching with params: {'page': '1', 'per_page': '96', 'search_text': 'Amouage', 'catalog_ids': '', 'brand_ids': '', 'order': 'newest_first'}
+2025-10-04 22:20:29,125 - vinted_scanner.py -       main():256 - INFO - API Response status: 200
+2025-10-04 22:20:29,130 - vinted_scanner.py -       main():259 - INFO - Found 96 items in response
+2025-10-04 22:20:29,130 - vinted_scanner.py -       main():264 - INFO - Item 1: Adventskalender Füllung Kosmetik 24Teile für Frauen: Bvlgari, Amouage - 30.0 EUR
+2025-10-04 22:20:29,130 - vinted_scanner.py -       main():264 - INFO - Item 2: Amouage Blossom Love - 80.0 EUR
+2025-10-04 22:20:29,130 - vinted_scanner.py -       main():264 - INFO - Item 3: Parfum Royal tobacco à 99% comme l’original tenue plus de 24h - 25.0 EUR
+2025-10-04 22:20:29,130 - vinted_scanner.py -       main():272 - INFO - Processing 5 most recent items
+2025-10-04 22:20:29,131 - vinted_scanner.py -   <module>():308 - INFO - Scan completed. Waiting 2 minutes before next scan...
